@@ -84,19 +84,24 @@ console.log("Watched:", movie.watched);
 //   createStudent("Alex", 11, 3.7)  → { name: "Alex", grade: 11, gpa: 3.7, isHonors: true }
 //   createStudent("Sam",  10, 2.9)  → { name: "Sam",  grade: 10, gpa: 2.9, isHonors: false }
 
+// TODO: return an object with name, grade, gpa, and isHonors
+
+const ppl = [
+  {
+    name: "Mason",
+    grade: 10,
+    gpa: 3.8,
+    isHonors: true,
+  },
+];
+
 function createStudent(name, grade, gpa, isHonors) {
-  // TODO: return an object with name, grade, gpa, and isHonors
-  return {
-    name: name,
-    grade: grade,
-    gpa: gpa,
-    isHonors: isHonors,
-  };
-}
-if (gpa > 3.5) {
-  console.log("true");
-} else {
-  console.log("false");
+  if (ppl.gpa > 3.5) {
+    console.log("isHonors: true");
+  } else {
+    console.log("isHonors: false");
+  }
+  return (name, grade, gpa, isHonors);
 }
 
 // Test your function — uncomment when ready:
