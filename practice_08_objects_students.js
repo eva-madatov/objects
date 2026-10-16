@@ -121,6 +121,9 @@ function createStudent(name, grade, gpa, isHonors) {
 //   findByName(students, "Marcus")  → null
 
 function findByName(students, targetName) {
+  const targetName = students.filter(function(student) {
+  return student.isHonors === true;
+});
   // TODO: use .find() to search by name
   // Hint: .find() returns undefined if nothing matches — convert that to null using || (or) operator
 }
@@ -147,7 +150,16 @@ function findByName(students, targetName) {
 function printRoster(students) {
   // TODO: loop through students with .forEach()
   // TODO: print each student in the format above
+ const students=[
+grade: grade
+Name: "name"
+gpa: gpa
+ ]
+ 
+  students.forEach
+  console.log(`Grade ${grade.name}' `Name ${student.name}' 'gpa )
 }
+
 
 // Test your function — uncomment when ready:
 // console.log("\n--- Problem 4 ---");
@@ -223,4 +235,4 @@ function sumValues(obj) {
 
 // EXTRA STRETCH:
 // Rewrite printRoster() using Object.entries() so it prints every
-// property of each student dynamically — even if you add a new property later.
+// property of each student dynamically — even if you add a new property late
